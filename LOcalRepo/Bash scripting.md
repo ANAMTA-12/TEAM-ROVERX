@@ -76,6 +76,27 @@ Great for scripts, games, random delays, or testing.
 
 ![WhatsApp Image 2025-06-12 at 00 11 24_eebafed1](https://github.com/user-attachments/assets/bbec5bee-c763-4445-98fb-0c7fb44260d2)
 
+In this I have created a system which basically calculates when you will become a millionaire using the $RANDOM variable.This variable usually 
+gives a random number between 0 to 32767 but here i have given $RANDOM % 15 which would give a random number between 0 to 14 and then we add it 
+to our age.
+
+![WhatsApp Image 2025-06-12 at 00 36 26_39606389](https://github.com/user-attachments/assets/0ecfd180-7522-4a1f-b30f-a61ced11aea8)
+
+The output:-
+
+![WhatsApp Image 2025-06-12 at 00 36 44_07772be8](https://github.com/user-attachments/assets/8d413aa6-28a6-4784-8a82-078a95f5becf)
+
+
+In this code I have tried to build the elden ring game a little synopsis
+![WhatsApp Image 2025-06-12 at 13 01 02_08040e30](https://github.com/user-attachments/assets/24f8aa04-716e-4402-8143-e38f5c237751)
+![WhatsApp Image 2025-06-12 at 13 22 14_1782cfd1](https://github.com/user-attachments/assets/dc98b746-120d-49a0-b05e-26e62b2db579)
+
+The output:-
+![WhatsApp Image 2025-06-12 at 13 21 49_239fd850](https://github.com/user-attachments/assets/f08d07a1-4c0e-4b03-9b62-e1567bc56cfb)
+
+
+
+
 
 
 
