@@ -149,7 +149,8 @@ done
 
 Some of the examples:-
 
-![WhatsApp Image 2025-06-12 at 20 47 05_cd4ba2ba](https://github.com/user-attachments/assets/3117d9fc-2367-4b0d-bebf-16129da18a7e)
+![IMG-20250613-WA0006 1](https://github.com/user-attachments/assets/7c72157c-589e-47c6-99a6-574337004cc1)
+
 
 The output:-
 ![WhatsApp Image 2025-06-12 at 20 47 41_0f018d89](https://github.com/user-attachments/assets/a113e406-3437-4f6a-bfb9-35308ce0af50)
