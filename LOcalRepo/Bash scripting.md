@@ -99,12 +99,10 @@ CONDITION STATEMENTS:
 1. if-else in Bash
 This is used to make decisions based on conditions.
 SYNTAX:-
-if [ condition ]; then
-  # commands if true
+if [ condition ]; then 
 elif [ another_condition ]; then
-  # commands if that is true
 else
-  # commands if none are true
+ (commands if none are true)
 fi
 
 2.case Statement (like switch)
@@ -131,7 +129,7 @@ for var in item1 item2 item3; do
     # commands using $var
 done
 
-2.2. while Loop
+2. while Loop
 Runs a command as long as a condition is true.
 
 Syntax:
