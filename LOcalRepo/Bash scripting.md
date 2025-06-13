@@ -95,6 +95,72 @@ The output:-
 ![WhatsApp Image 2025-06-12 at 13 21 49_239fd850](https://github.com/user-attachments/assets/f08d07a1-4c0e-4b03-9b62-e1567bc56cfb)
 
 
+CONDITION STATEMENTS:
+1. if-else in Bash
+This is used to make decisions based on conditions.
+SYNTAX:-
+if [ condition ]; then
+  # commands if true
+elif [ another_condition ]; then
+  # commands if that is true
+else
+  # commands if none are true
+fi
+
+2.case Statement (like switch)
+Used when you have multiple choices to match against a variable
+case $variable in
+    pattern1)
+        # commands
+        ;;
+    pattern2)
+        # commands
+        ;;
+    *)
+        # default case
+        ;;
+esac
+
+LOOPING COMMANDS:-
+
+1. for Loop
+Used when you know how many times you want to loop.
+
+Syntax:
+for var in item1 item2 item3; do
+    # commands using $var
+done
+
+2.2. while Loop
+Runs a command as long as a condition is true.
+
+Syntax:
+while [ condition ]; do
+    # commands
+done
+
+3. until Loop
+Opposite of while: runs until a condition becomes true.
+
+Syntax:
+until [ condition ]; do
+    # commands to run
+done
+
+Some of the examples:-
+
+![WhatsApp Image 2025-06-12 at 20 47 05_cd4ba2ba](https://github.com/user-attachments/assets/3117d9fc-2367-4b0d-bebf-16129da18a7e)
+
+The output:-
+![WhatsApp Image 2025-06-12 at 20 47 41_0f018d89](https://github.com/user-attachments/assets/a113e406-3437-4f6a-bfb9-35308ce0af50)
+
+
+
+![WhatsApp Image 2025-06-13 at 00 49 28_f53081b5](https://github.com/user-attachments/assets/e9762ac9-a4b2-46b1-a3c7-fe977d9b041b)
+
+The output:-
+
+![WhatsApp Image 2025-06-13 at 00 51 05_6e1cbcb7](https://github.com/user-attachments/assets/73f39e47-9551-41f1-a27d-6668ece3a300)
 
 
 
