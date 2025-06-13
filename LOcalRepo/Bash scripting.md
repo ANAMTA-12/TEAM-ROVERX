@@ -36,6 +36,11 @@ vi.We first use ls -l command to check whether the file is executable or not.The
 vii.ls stands for “list”.It is used to list the contents of a directory (i.e., files and folders).
 ls -l command is a long listing format of the ls command.It shows detailed information about files and directories in the current directory.
 
+
+![WhatsApp Image 2025-06-11 at 23 56 19_df87440e](https://github.com/user-attachments/assets/efb0a96a-3e29-4a30-a1f8-4ae576978e7d)
+
+
+
 viii.chmod stands for “change mode”.It is used to change file or directory permissions in Linux and Unix systems.
 Permissions control who can read, write, or execute a file.
 
@@ -52,6 +57,12 @@ As you can see I was facing the error first because in the code above I have ski
 I fixed then:-
 ![WhatsApp Image 2025-06-11 at 22 06 40_f9c7c4dd](https://github.com/user-attachments/assets/08ad50b3-6e67-4ead-be4f-c2347e643d4e)
 It shows the desired output.
+
+Also made it executable:-
+![WhatsApp Image 2025-06-11 at 22 07 26_0d3f9e63](https://github.com/user-attachments/assets/4abd7b3a-0277-4d6f-87b0-8c0f05a16c33)
+
+
+
 
 
 
