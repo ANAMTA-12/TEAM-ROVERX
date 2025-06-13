@@ -48,6 +48,9 @@ ix.+x means to make it executable.
 
 x.The echo command is used to display text or variables in the terminal.
 
+xi.The $ symbol is used to access the value of the variable.
+
+
 ![WhatsApp Image 2025-06-11 at 21 39 22_0e2b3953](https://github.com/user-attachments/assets/e509d193-2ee3-4234-82ba-4c2b4d030083)
 In the above code i have created a file named himom.sh which basically tells hi mom.
 
@@ -60,6 +63,18 @@ It shows the desired output.
 
 Also made it executable:-
 ![WhatsApp Image 2025-06-11 at 22 07 26_0d3f9e63](https://github.com/user-attachments/assets/4abd7b3a-0277-4d6f-87b0-8c0f05a16c33)
+
+Further I have use some of the commands.
+The first two lines helps for user input.I have also further used some of the commands as well.
+PWD-pwd stands for "Print Working Directory".It shows the full path of the current directory you are in, in the terminal.
+USER-$USER is not a command—it's a shell variable.It holds the username of the currently logged-in user.
+SHELL-$SHELL is an environment variable (not a command).It stores the path of the default shell assigned to the current user.
+HOSTNAME-$HOSTNAME is an environment variable.It stores the name of the computer or system you're working on.
+RANDOM-$RANDOM is a built-in Bash variable (not a command).Every time you use it, it gives a random number between 0 and 32767.
+Great for scripts, games, random delays, or testing.
+
+
+![WhatsApp Image 2025-06-12 at 00 11 24_eebafed1](https://github.com/user-attachments/assets/bbec5bee-c763-4445-98fb-0c7fb44260d2)
 
 
 
