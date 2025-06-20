@@ -1,1 +1,30 @@
+Communication protocols and sensors:-
+Communication protocols are basically the rules of communication between two electronic devices.It's just like how two robots or two computers trying to establish
+connections with each other like how to talk,when to talk and what languages to use to interact with each other.
+Sensors are electronic devices that try to detect changes in the physical world and convert them into digital signals that systems can understand.
+
+IMU:-
+It stands for Inertial Measurement Unit.It measures angular rate,force and sometimes magnetic field.IMU contains some devices which have measuring tools which
+perform specific tasks for example 3-axis gyroscope + accelerometer would make 6-axis IMU and 9-axis IMU consist of accelorometer, gyroscope and magnetometer.
+Accelerometer measures change of velocity of a moving object due to linear f
+orces which are acting on the body  and they are commonly used, due to force of gravity 
+speeding up or slowing down we can combine a vehicle’s acceleration to calculate velocity and then distance travelled. Accelerometer data alone does not account for 
+turns and non linear movement that is why it also contains a Gyroscope.
+Gyroscope which measures angular velocity of three axes,roll about y-axis, pitch about x-axis and rate of rotation about z-axis,they don’t have any initial frame of
+reference like accelerometer using both their datas, a sensor fusion basically techniques a vehicles position and orientation which can be easily calculated.Their 
+data can also be used in GNSS based navigation system (it is basically a satellite based system that provides positioning,navigation and timing services to users on 
+the planet and near the earth’s surfaces as well) to allow us for the use of precise tracking systems and detailed motion data to be gathered about a vehicle and then 
+motion data can be combined with sensors such as speed or reverse gear signals for collision and detection analysis.
+Another key use of IMU is dead reckoning (it is a navigation technique that estimates an object’s current position based on it’s previous known position,direction and
+speed as well)
+IMU chips also uses gnss data  as a reference point and thus it gathers information about vehicle’s movement and use calculations to determine an exact route before 
+gnss signal is restored(gnss only reach metre accuracy whereas imu is important for sharing the most accurate data).
+
+
+
+
+
+
+
+
 
