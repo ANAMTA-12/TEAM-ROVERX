@@ -21,7 +21,146 @@ IMU chips also uses gnss data  as a reference point and thus it gathers informat
 gnss signal is restored(gnss only reach metre accuracy whereas imu is important for sharing the most accurate data).
 
 
+GPS:-
+GPS is a satellite-based navigation system that provides location and time information anywhere on Earth. It stands for Global Positioning System. It basically uses
+a network of satellites that transmit signals to the GPS receivers, which further calculate their position based on the distance from the satellite. 
+How do GPS receivers communicate? i
+.Several languages or protocols including standard and non-standard message formats 
+ii.Information stored as binary data transmitted as binary or Several standard formats
+NEMA-0183 is a way of transmitting the information through GPS. These type of transmissions basically use ASCII as a way to transmit the that data.
+NEMA 0183 was founded in 1957 by Electronic Dealers at New York Boardshow to strengthen the relationship with other companies. Protocol was later on adopted in 1983 
+for interfacing marine electronics but has also expanded for terrestrial electronics. It is ASCII based. It uses 8 bits of data.
+The data is transmitted in ASCII strings or sentences. Sentences begin with a dollar sign and end with a carriage return line feed <CR>< LF>
+It always kind of end up with this asterisk and then two hexadecimal values which acts as a checksum. A checksum basically allows us to determine that this entire 
+stream will be essentially transmitted correctly I think the character in that calls are set to be incorrect. So this checks on the way for us to check on that. 
+There is a maximum value of 80 characters, and it's 80 characters plus those two additional characters of the return line. There is a limitation on the amount of 
+data we can transmit in a single string. 
+There are 3 types of sentences.
+1. Talker sentences:-It's the most common type and it divides the address up into two characters and three characters, with the first two characters being the talker
+and the last three characters being the actual sentence of that character ,the sentence identifier will be dependent on the talker. 
+For example $GPGLL,3607.48,N,09704.43,W*7A 
+N for  north and W for  west, there's probably a latitude and longitude and that's what the GPGLL string works. GP stands for GPS at the talker, so any time we see 
+GP, that means a GPS unit is talking. And GLL is basically a unit that basically is talking about geographic position lat/long. So this one here is just delivering 
+lat/long values if we see this string. 
+2.Proprietary sentences:-These always come with a capital P character right after the dollar sign.These have a particular manufacturer ID that take up the next three
+characters, and that fifth character in the address is a letter code for that particular manufacturer. So they have A through Z, 26 particular characters there. They
+can define whatever sentence they want to define. And then they have however many data fields they want to have, as long as they don't exceed the 80-character limit.
+And then, again, the whole checksum and carriage return line feed. For example, $PLEIS, AHT,0, 1.90,0*34<CR><FL>
+LEIS, which stands for Leica Systems, which is a manufacturer of surveying equipment. AT is the antenna height, and this is basically a sentence that's telling us 
+where 1.9 meters is the height of the antenna for this particular unit. 
+3.Query sentence:-It's not used quite as much because the NEMA 0183 tends to be a one-talker-and-lots-of-listeners type of thing. But a query sentence allows a talker
+to basically identify a listener and ask for a particular sentence. 
+For example, $CCGPQ, GLL<CR><LF>that last Q tells us that it's a query sentence, and basically a computer is asking the GPS for the GLL sentence code.
 
+IP cameras:-
+An IP camera stands for Internet Protocol Camera, which is basically a digital video camera that transmits video footage over a network or the Internet. The basic 
+difference between normal analog CCTV cameras and IP cameras is that IP cameras don't require a dedicated recording device like a DVR. That is, they can send and 
+receive data directly to a network video recorder or even the cloud storage.
+It is pretty easy to put an IP camera system together. First, we choose the cameras we want. Then we select the cable length we need. And then we will choose an NVR
+with PoE. Connect to the network cable. Then connect. The thing is simple. Once you've mounted our camera, connect it to the network cable. Then connect the cable to
+the NVR's PoE port. Now it’s recording.
+Some common protocols of IP are:-
+1. RTSP (Real-Time Streaming Protocol)
+	Purpose: Streaming live video/audio over IP networks.
+	Use: Used by most IP cameras for real-time video feed.
+2. ONVIF (Open Network Video Interface Forum)
+	Purpose: Standard protocol for interoperability between IP-based security products.
+	Use: Allows control, configuration, and stream access of IP cameras regardless of the manufacturer.
+3. HTTP/HTTPS
+	Purpose: Used for camera configuration and sometimes for video streaming (via MJPEG).
+	Use:
+	i.Access camera web interface.
+	ii.Get snapshot images or MJPEG streams.
+4. RTMP (Real-Time Messaging Protocol)
+	Purpose: Used for streaming to platforms like YouTube or Facebook.
+	Use: Less common for IP cameras directly, but used when paired with streaming servers (like NGINX RTMP).
+5. FTP/SFTP
+	Purpose: For sending motion-detected images or videos to a remote server.
+	Use: Cameras upload images/video clips when motion is detected.
+6. SMTP (Simple Mail Transfer Protocol)
+	Purpose: Email alerts.
+	Use: Send motion detection images or logs to email addresses.
+7. DHCP (Dynamic Host Configuration Protocol)
+	Purpose: Assign IP addresses dynamically to the camera.
+	Use: Automatically provides camera with IP, gateway, DNS, etc.
+8. NTP (Network Time Protocol)
+	Purpose: Synchronize the camera clock with a time server.
+	Use: Ensures timestamp accuracy for recorded footage.
+
+
+Baud Rate:-
+The baud rate is the rate at which information is transferred in a communication channel. Baud rate is commonly used when discussing electronics that use serial 
+communication. In the serial port context, "9600 baud" means that the serial port is capable of transferring a maximum of 9600 bits per second.
+At baud rates above 76,800, the cable length will need to be reduced. The higher the baud rate, the more sensitive the cable becomes to the quality of installation,
+due to how much of the wire is untwisted around each device.
+
+Communication Protocols:-
+The proper descriptions of digital message formats as well as rules are known communication protocols. The main function of these protocols is to exchange messages 
+from one computer system to another. These are significant in telecommunications systems as they consistently send and receive messages. These protocols cover error
+detection & correction, signaling, and authentication. They can also explain the semantics, syntax & brings analog & digital communications together.
+There are two types of communication protocols which are classified below:
+Inter System Protocol
+Intra System Protocol
+
+Inter System Protocol
+The inter-system protocol using to communicate the two different devices. Like communication between computer to microcontroller kit. The communication is done 
+through an inter bus system,Inter Bus System Protocols.
+Its types:-
+UART Protocol
+USART Protocol
+USB Protocol
+
+UART Protocol
+UART stands for a universal asynchronous transmitter and receiver. 
+UART Protocols is a serial communication with two wired protocols. The data cable signal lines are labeled as Rx and Tx. Serial communication is commonly used for 
+transmitting and receiving the signal. It is transferred and receives the data serially bit by bit without class pulses. The UART takes bytes of data and sends the
+individual bits in a sequential manner.
+UART is a half-duplex protocol. (Half-duplex means transferring and receiving the data but not at the same time).Most of the controllers have hardware UART on board.
+It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and a one-stop bit mean the 8-bit data transfer one’s signal is 
+high to low.
+Eg:-Emails, SMS, Walkie-talkie.
+
+USART Protocol
+USART stands for a universal synchronous and asynchronous transmitter and receiver. It is a serial communication of a two-wire protocol. The data cable signal lines
+are labeled as Rx and TX. This protocol is used to transmitting and receiving the data byte by byte along with the clock pulses. It is a full-duplex protocol that 
+means transmitting and receiving data simultaneously to different board rates. 
+Eg:-Telecommunications
+
+USB Protocol
+USB stands for universal serial bus. Again it is a serial communication of two-wire protocol. The data cable signal lines are labeled D+ and D-. 
+This protocol is used to communicate with the system peripherals.USB protocol is used to send and receive the data serially to the host and peripheral devices.
+USB communication requires driver software that is based on the functionality of the system.USB devices can transfer data on the bus without any request on the host
+computer.
+
+
+Intra System Protocol
+The Intra system protocol is used to communicate the two devices within the circuit board.The circuit complexity and power consumption will be increased by using 
+the intrasystem protocol.
+Its types:-
+I2C Protocol
+SPI Protocol
+CAN Protocol
+
+I2C Protocol
+I2C stands for the inter-integrated circuit and it requires only two wires connecting all peripherals to the microcontroller. I2C requires two wires SDA 
+(serial data line) and SCL (serial clock line) to carry information between devices. It is a master to a slave communication protocol. Each slave has a unique 
+address. The master device sends the address of the target slave device and reads/writes the flag. The address matches any slave device that the device is ON,
+the remaining slave devices are then on disabled mode.
+
+SPI Protocol
+SPI stands for the serial peripheral interface. 
+It is one of the serial communication protocol.It requires four wires MOSI, MISO, SS, and SCLK.SPI protocol used to communicate the master and slave devices.
+The master first configures the clock using a frequency.
+
+CAN Protocol
+CAN stands for the controller area network. It is a serial communication protocol. It requires two wires CAN High (H+) and CAN low (H-).
+Modern vehicles have dozens of Electronic Control Units for engine, brakes, airbags, etc. Instead of running separate wires between each ECU, CAN allows them to 
+communicate over a shared two-wire bus, reducing complexity and weight.
+
+UDEV:-
+Udev is the Linux subsystem that supplies your computer with device events.It's the code that detects when we have things plugged into our computer, like a network 
+card, external hard drives, mouses, keyboards, joysticks and gamepads.It is  a potentially useful utility, and it's well-enough exposed that a standard user can
+manually script it to do things like performing certain tasks when a certain hard drive is plugged in.
 
 
 
