@@ -1,0 +1,42 @@
+IMAGE PROCESSING:-
+In a normal way if we look at a photo and instantly noticing colors, shapes, and faces. Now imagine if we teach a computer to do the same. That’s image processing.
+It’s all about converting images into data that a machine can understand. An image is basically a giant grid of pixels—tiny dots that hold color and brightness
+information. Image processing techniques help us clean up, enhance, or analyze that grid.
+Some of its techniques are:-
+i.Filtering to sharpen or blur parts of the image.
+ii.Edge Detection to find boundaries and shapes, like sketching the outlines of objects.
+iii.Thresholding to turn complex photos into simple black and white maps super useful for pattern recognition.
+iv.Transformations to rotate, resize, or warp images however we need.
+
+COLOUR THEORY:-
+Color theory in image processing involves understanding how colors are represented and manipulated. In OpenCV, colors are handled using various color spaces:
+1.RGB (Red, Green, Blue):- Additive color model. Standard in most display systems.
+2.BGR:-OpenCV stores images in Blue-Green-Red order by default.
+3.HSV (Hue, Saturation, Value): Useful for color segmentation tasks.
+4.Grayscale: Simplified image where each pixel carries intensity only.
+
+HISTOGRAM EQUILIZATION:-
+An image histogram is a graphical representation of the distribution of pixel intensity values in an image. For grayscale images, it shows how many pixels 
+have intensity 0,1,2 upto 255.
+i.X-axis:-Pixel intensity values (0 to 255)
+ii.Y-axis:-Number of pixels at each intensity level
+In pratice:-
+Input image:-May look dull or underexposed.
+Equalized image:-Appears more vivid and sharp especially useful in satellite images, medical imaging, and nighttime photos.
+Some types:-
+i.Standard Histogram Equalization:-Equalizes a grayscale image.
+ii.CLAHE (Contrast Limited Adaptive Histogram Equalization):-Works on small tiles of the image to prevent overenhancement.
+iii.Color Histogram Equalization:-Use on lightness channel in LAB or YUV space.
+
+THRESHOLDING:-
+Thresholding is a segmentation technique in image processing where we separate objects from the background.It simplifies image data, which makes tasks like object
+detection, contour finding, and OCR (optical character recognition) more efficient.
+Some of its types:-
+i.Simple Thresholding:-Applies one global threshold to all pixels	
+ii.Inverse Thresholding:-Similar to simple, but reverses the white/black assignment	
+iii.Otsu's Method:-Calculates optimal threshold automatically	
+iv.Adaptive Thresholding:-Threshold is calculated for small regions independently
+
+
+
+
