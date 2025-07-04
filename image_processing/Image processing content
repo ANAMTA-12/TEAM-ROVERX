@@ -40,3 +40,75 @@ i.Simple Thresholding:-Applies one global threshold to all pixels
 ii.Inverse Thresholding:-Similar to simple, but reverses the white/black assignment	
 iii.Otsu's Method:-Calculates optimal threshold automatically	
 iv.Adaptive Thresholding:-Threshold is calculated for small regions independently
+
+CONTRAST AND BRIGHTNESS ADJUSTMENT
+Contrast is the difference between the light and dark areas in an image. High contrast makes whites brighter and blacks darker, giving the image a sharper, 
+more dramatic look. Low contrast makes the image look soft and flat as if it were caught in fog.
+Brightness refers to how light or dark an image appears as a whole. For example if we turn up the brightness on our screen it makes everything glow a little more, 
+even the shadows. 
+So in conclusion:-
+Adjust brightness if the image looks too dim or too bright.
+Adjust contrast if details are getting lost or if it looks too harsh.
+
+SMOOTHING(BLURRING)
+Blurring, also known as smoothing, is like giving our image a soft-focus filter. It reduces noise, evens out color transitions, and makes edges look less harsh.
+Its types:-
+1.Average (Mean) Blur — Each pixel becomes the average of its neighbors. Great for basic softening but may remove sharp details.
+2.Gaussian Blur — Uses a weighted average where central pixels matter more. Smoother and more natural-looking than mean blur.
+3.Median Blur — Replaces a pixel with the median value in the neighborhood. Excellent for removing salt-and-pepper noise.
+4.Bilateral Filter — Smart blur that preserves edges while still reducing noise. Good for images with details you want to keep.
+
+DILATION AND ERODING
+Erosion shrinks white regions by eroding boundaries. It’s like sandpaper-wherever the structuring element doesn't fully fit inside the white region, the pixel turns
+black.
+In OpenCv(Syntax):- 
+eroded = cv2.erode(src=image, kernel=kernel, iterations=1)
+Dilation does the opposite. It expands the white regions. If any part of the structuring element overlaps with white, the center pixel becomes white too.
+In OpenCv(Syntax):-
+dilated = cv2.dilate(image, kernel, iterations=1)
+
+SHARPENING
+Sharpening emphasizes areas where pixel intensity changes rapidly. These areas are often edges—where two different regions meet (like the border of an object). 
+So, sharpening highlights outlines and textures, making features pop.
+Sharpening is often done using a kernel (a small matrix) that accentuates edges. This process is called convolution, where each pixel value is adjusted based on its 
+neighbors.
+Common kernel:-
+sharp_kernel = np.array([[ 0, -1,  0],
+                         [-1,  5, -1],
+                         [ 0, -1,  0]])
+
+GEOMETRIC TRANSFORMATIONS
+Geometric transformations in image processing let us move, rotate, scale, warp, or even flip images like they're made of elastic pixels. These transformations 
+don't change the image's content, but they definitely change how and where it appears. 
+
+EDGE DETECTIONS
+Edge detection is like giving your image a sense of outlines—a way to see where one thing ends and another begins. It’s the moment your eyes catch the sharp edge 
+of a mountain against the sky or trace the shape of letters on a page. In image processing, it's all about identifying sharp changes in intensity.
+
+CONTOURS
+Technically, a contour is a curve joining all the continuous points having the same intensity. In binary images, that usually means the white object against a black 
+background.
+Contours in image processing are like outlines on a map—they trace the boundaries of objects in an image. Once we've sharpened, blurred, or applied edge detection,
+contours help us identify what is where. They're essential for analyzing shapes, finding objects, or even creating bounding boxes for things like facial detection
+or motion tracking.
+
+CORNER DETECTION
+Corner detection is all about spotting those distinctive points in an image where two edges intersect. For example the tip of a star, the corner of a building, 
+or the dot of an 'L'—these places are rich in information and perfect for tasks like motion tracking, stitching panoramas, or matching features across frames.
+
+IMAGE FUSION
+Image fusion combines multiple images into one that’s more informative, clearer, or aesthetically better than any of the originals. It’s used across fields like 
+medical imaging, satellite photography, night vision, and more, where different image sources reveal different details.
+
+CONVOLUTION
+Convolution is one of the most fundamental operations in image processing and computer vision. At its core, it’s a mathematical operation that helps us enhance,
+detect, or transform certain patterns in an image. 
+Convolution involves two things:
+1.An input image (matrix of pixel values)
+2.A kernel also known as a filter
+
+
+
+
+
+
