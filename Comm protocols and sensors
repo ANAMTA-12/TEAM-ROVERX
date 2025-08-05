@@ -131,7 +131,7 @@ USB stands for universal serial bus. Again it is a serial communication of two-w
 This protocol is used to communicate with the system peripherals.USB protocol is used to send and receive the data serially to the host and peripheral devices.
 USB communication requires driver software that is based on the functionality of the system.USB devices can transfer data on the bus without any request on the host
 computer.
-
+We use this protocol.We basically use a serial converter because USB dosent have a baud rate.
 
 Intra System Protocol
 The Intra system protocol is used to communicate the two devices within the circuit board.The circuit complexity and power consumption will be increased by using 
